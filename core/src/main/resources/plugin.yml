@@ -1,0 +1,8 @@
+name: core
+version: '$version'
+
+main: dev.enco.encolib.a
+api-version: '1.21'
+load: POSTWORLD
+
+authors: [Encourager]
