@@ -1,4 +1,11 @@
 package dev.enco.encolib.scheduler.tasks;
 
-public class FoliaTask {
+import dev.enco.encolib.scheduler.WrappedTask;
+import io.papermc.paper.threadedregions.scheduler.ScheduledTask;
+
+public record FoliaTask(ScheduledTask runnable) implements WrappedTask<ScheduledTask> {
+    @Override
+    public void cancel() {
+        runnable.cancel();
+    }
 }

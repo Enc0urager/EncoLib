@@ -1,4 +1,6 @@
 package dev.enco.encolib.scheduler;
 
-public interface WrappedTask {
+public interface WrappedTask<T> {
+    void cancel();
+    T runnable();
 }

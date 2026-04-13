@@ -1,4 +1,4 @@
-package dev.enco.encolib.utils.text.colorizer;
+package dev.enco.encolib.text.colorizer;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;

@@ -1,4 +1,4 @@
-package dev.enco.encolib.utils.text.formatting;
+package dev.enco.encolib.text.formatting;
 
 import lombok.experimental.UtilityClass;
 
@@ -6,9 +6,10 @@ import lombok.experimental.UtilityClass;
 public class PlaceholderFormatter {
 
     public static String format(String text, String[] keys, String[] values) {
+        if (text == null || keys == null || values == null) return text;
         int keysLen = keys.length;
         int valuesLen = values.length;
-        if (text == null || keysLen == 0 || valuesLen == 0) return text;
+        if (keysLen == 0 || valuesLen == 0) return text;
         if (valuesLen != keysLen) throw new IllegalArgumentException("Values and keys must have the same lengths");
         if (keysLen < 5) return formatShort(text, keys, values);
         return formatBig(text, keys, values);

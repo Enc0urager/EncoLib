@@ -1,4 +1,5 @@
 package dev.enco.encolib;
 
-public class LibPlugin {
-}
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class LibPlugin extends JavaPlugin {}

@@ -1,4 +1,4 @@
-package dev.enco.encolib.utils.text.colorizer;
+package dev.enco.encolib.text.colorizer;
 
 public class LegacyColorizer implements IColorizer {
     private static final char COLOR_CHAR = '§';

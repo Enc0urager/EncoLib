@@ -1,4 +1,4 @@
-package dev.enco.encolib.utils.text.formatting;
+package dev.enco.encolib.text.formatting;
 
 import lombok.Builder;
 

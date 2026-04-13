@@ -1,4 +1,4 @@
-package dev.enco.encolib.utils.logger;
+package dev.enco.encolib.logger;
 
 public interface ILogger {
     void info(String s);

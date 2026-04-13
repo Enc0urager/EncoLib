@@ -4,10 +4,15 @@ import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class ActionMap<T> {
-    private final ParsedAction<T>[] actions;
+    private static final String[] EMPTY = new  String[0];
+    private final ParsedExecutor<T>[] actions;
 
     public void execute(T target) {
-        for (ParsedAction<T> action : actions)
-            action.execute(target);
+        execute(target, EMPTY, EMPTY);
+    }
+
+    public void execute(T target, String[] keys, String[] values) {
+        for (ParsedExecutor<T> action : actions)
+            action.execute(target, keys, values);
     }
 }

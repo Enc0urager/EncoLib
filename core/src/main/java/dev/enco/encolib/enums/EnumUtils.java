@@ -1,4 +1,4 @@
-package dev.enco.encolib.utils.enums;
+package dev.enco.encolib.enums;
 
 import java.util.Collection;
 import java.util.EnumSet;

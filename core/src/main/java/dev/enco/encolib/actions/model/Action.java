@@ -34,7 +34,7 @@ public class Action<T> {
         return this;
     }
 
-    public void execute(T target, Object[] args) {
-        executor.execute(target, args);
+    public void execute(T target, Object[] args, String[] keys, String[] values) {
+        executor.execute(target, args, keys, values);
     }
 }

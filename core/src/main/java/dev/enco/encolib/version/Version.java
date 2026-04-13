@@ -1,4 +1,4 @@
-package dev.enco.encolib.utils.version;
+package dev.enco.encolib.version;
 
 import lombok.RequiredArgsConstructor;
 import org.bukkit.Bukkit;

@@ -1,4 +1,4 @@
-package dev.enco.encolib.utils.text.message;
+package dev.enco.encolib.text.message;
 
 import org.bukkit.entity.Player;
 

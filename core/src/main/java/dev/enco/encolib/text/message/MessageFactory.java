@@ -1,6 +1,6 @@
-package dev.enco.encolib.utils.text.message;
+package dev.enco.encolib.text.message;
 
-import dev.enco.encolib.utils.version.Version;
+import dev.enco.encolib.version.Version;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass

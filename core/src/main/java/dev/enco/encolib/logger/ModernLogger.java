@@ -1,4 +1,4 @@
-package dev.enco.encolib.utils.logger;
+package dev.enco.encolib.logger;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.logger.slf4j.ComponentLogger;

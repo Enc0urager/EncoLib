@@ -1,8 +1,5 @@
-name: core
+name: EncoLib
 version: '$version'
-
-main: dev.enco.encolib.a
-api-version: '1.21'
-load: POSTWORLD
-
+main: dev.enco.encolib.LibPlugin
+api-version: '1.16'
 authors: [Encourager]

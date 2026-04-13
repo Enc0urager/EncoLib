@@ -3,13 +3,10 @@ package dev.enco.encolib.actions.factory;
 import dev.enco.encolib.actions.argument.Argument;
 import dev.enco.encolib.actions.model.Action;
 import dev.enco.encolib.actions.model.ActionMap;
-import dev.enco.encolib.actions.model.ParsedAction;
+import dev.enco.encolib.actions.model.ParsedExecutor;
 import dev.enco.encolib.actions.registry.ActionRegistry;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ActionFactory<T> {
     private final ActionRegistry<T> registry;
@@ -18,8 +15,8 @@ public class ActionFactory<T> {
         this.registry = registry;
     }
 
-    public ActionMap<T> parse(List<String> lines) {
-        List<ParsedAction<T>> compiled = new ArrayList<>();
+    public ActionMap<T> parse(Collection<String> lines) {
+        List<ParsedExecutor<T>> compiled = new ArrayList<>();
 
         for (String line : lines) {
             if (!line.startsWith("[")) continue;
@@ -44,11 +41,11 @@ public class ActionFactory<T> {
                 }
             }
 
-            ParsedAction<T> action = (target) -> def.execute(target, parsed);
+            ParsedExecutor<T> action = (target, keys, values) -> def.execute(target, parsed, keys, values);
             compiled.add(action);
         }
 
-        return new ActionMap<>(compiled.toArray(new ParsedAction[0]));
+        return new ActionMap<>(compiled.toArray(new ParsedExecutor[0]));
     }
 
     private Map<String, String> parseArguments(String raw) {

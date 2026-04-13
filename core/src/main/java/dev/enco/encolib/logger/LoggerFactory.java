@@ -1,6 +1,6 @@
-package dev.enco.encolib.utils.logger;
+package dev.enco.encolib.logger;
 
-import dev.enco.encolib.utils.version.Version;
+import dev.enco.encolib.version.Version;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class LoggerFactory {

@@ -1,5 +1,5 @@
 package dev.enco.encolib.actions.model;
 
-public interface ParsedAction<T> {
-    void execute(T target);
+public interface ParsedExecutor<T> {
+    void execute(T target, String[] keys, String[] values);
 }

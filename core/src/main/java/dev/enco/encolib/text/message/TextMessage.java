@@ -1,7 +1,7 @@
-package dev.enco.encolib.utils.text.message;
+package dev.enco.encolib.text.message;
 
-import dev.enco.encolib.utils.text.formatting.PlaceholderFormatter;
-import dev.enco.encolib.utils.text.colorizer.Colorizer;
+import dev.enco.encolib.text.formatting.PlaceholderFormatter;
+import dev.enco.encolib.text.colorizer.Colorizer;
 import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.entity.Player;
 
