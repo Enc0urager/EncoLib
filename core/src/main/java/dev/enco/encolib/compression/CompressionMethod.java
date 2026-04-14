@@ -1,4 +1,4 @@
-package dev.enco.encolib.item;
+package dev.enco.encolib.compression;
 
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;
 import org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;

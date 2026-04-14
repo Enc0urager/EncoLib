@@ -1,5 +1,6 @@
 package dev.enco.encolib.item;
 
+import dev.enco.encolib.compression.CompressionMethod;
 import lombok.experimental.UtilityClass;
 import org.bukkit.Location;
 import org.bukkit.Material;
