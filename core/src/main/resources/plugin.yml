@@ -3,3 +3,8 @@ version: '$version'
 main: dev.enco.encolib.LibPlugin
 api-version: '1.16'
 authors: [Encourager]
+folia-supported: true
+depend:
+  - PlaceholderAPI
+libraries:
+  - org.apache.commons:commons-compress:1.28.0
