@@ -1,8 +1,10 @@
 package dev.enco.encolib.logger;
 
 import dev.enco.encolib.version.Version;
+import lombok.experimental.UtilityClass;
 import org.bukkit.plugin.java.JavaPlugin;
 
+@UtilityClass
 public class LoggerFactory {
     public ILogger newLogger(JavaPlugin plugin) {
         if (Version.getServerVersion().isHigherThanOrEqualTo(Version.V1_19)) return new ModernLogger(plugin);
