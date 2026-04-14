@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/Enc0urager/GreatCombat.svg)](https://jitpack.io/#ru.encourager/EncoLib/EncoLib)
+[![](https://jitpack.io/v/Enc0urager/EncoLib.svg)](https://jitpack.io/#ru.encourager/EncoLib/EncoLib)
 ```xml
 <repository>
 	  <id>jitpack.io</id>
